@@ -1,0 +1,41 @@
+configuration {
+  modi: "drun";
+  kb-cancel: "Escape,Alt+F1";
+  font: "monospace 12";
+  opacity: 85;
+} 
+
+@theme "/usr/share/rofi/themes/material.rasi"
+
+* {
+  base0D: #9AAF93; 
+  base03: #1A1A1A;
+}
+
+prompt, textbox-prompt-colon {
+    text-color: #ffffff;
+}
+
+window {
+  background-color: rgba(26, 26, 26, 0.80);
+  fullscreen: true;
+}
+
+mainbox {
+    padding: 30% 30%;
+    border: none;
+    children: [inputbar, message, listview];
+}
+
+listview {
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    children: [element-text];
+}
+
+element selected {
+    text-color: #000000;
+}

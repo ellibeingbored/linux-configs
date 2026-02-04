@@ -1,0 +1,58 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "min-height": 30,
+    "spacing": 2,
+    "modules-left": ["sway/workspaces","sway/mode","cpu", "memory"],
+    "modules-center": ["clock"],
+    "modules-right": ["sway/language", "pulseaudio", "battery", "backlight", "tray"],
+    "clock": {
+        "format": "{:%a, %d. %b  %H:%M}",
+        "tooltip": false
+    }, 
+    "backlight": {
+        "format": "<span color='#9aaf93'>mon:</span> {percent}%",
+        "scroll-step": 5,
+        "tooltip": false
+    },
+    "battery": {
+        "format": "<span color='#9aaf93'>bat:</span> {capacity}%",
+        "format-full": "<span color='#9aaf93'>bat: FULL</span>",
+        "format-charging": "<span color='#9aaf93'>bat:</span> {capacity}% [CHARGING]",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "<span color='#9aaf93'>vol:</span> {volume}%",
+        "format-muted": "<span color='#9aaf93'>vol:</span> MUTED",
+        "scroll-step": 5,
+        "tooltip": false
+    },
+    "sway/language": {
+        "format": "<span color='#9aaf93'>key:</span> {}",
+        "tooltip": false
+    },
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 50
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "<span color='#9aaf93'>cpu:</span> {usage}%",
+        "tooltip": false,
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 10,
+        "format": "<span color='#9aaf93'>mem:</span> {}%",
+        "tooltip": false,
+        "max-length": 10
+    },
+    "sway/mode": {
+        "format": "<span>{}</span>"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing":5,
+        "tooltip": false
+    }
+}

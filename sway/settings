@@ -1,0 +1,16 @@
+# Base Keys
+set $mod Mod4
+
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Base Applications
+set $term foot
+set $menu rofi -show drun
+set $browser firefox
+
+# Colors
+set $accent #9AAF93
+set $unfocused #666666
